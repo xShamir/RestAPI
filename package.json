@@ -1,0 +1,17 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "My first RestAPI",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "author": "Shamir",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
