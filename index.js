@@ -13,6 +13,4 @@ db.once('open', () => console.log("Connection established with database."));
 
 app.use(express.json());
 
-
-
 app.listen(3000, () => console.log("Online!"));
