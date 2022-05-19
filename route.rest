@@ -1,0 +1,28 @@
+GET http://localhost:3000/Subscribers
+
+###
+
+GET http://localhost:3000/Subscribers/{id}
+
+###
+
+POST http://localhost:3000/Subscribers
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "subscribedTo": "MrBeast"
+}
+
+###
+
+DELETE http://localhost:3000/Subscribers/{id}
+
+###
+
+PATCH http://localhost:3000/Subscribers/{id}
+Content-Type: application/json
+
+{
+    "name": "Joe Mana"
+}
