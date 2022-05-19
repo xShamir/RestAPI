@@ -13,4 +13,7 @@ db.once('open', () => console.log("Connection established with database."));
 
 app.use(express.json());
 
+const router = require("./routes/subscribers");
+app.use("/subscribers", router);
+
 app.listen(3000, () => console.log("Online!"));
