@@ -1,8 +1,13 @@
+
+// DISCLAIMER: Requires REST Client extension from VSCode
+
+// Subscribers
+
 GET http://localhost:3000/Subscribers
 
 ###
 
-GET http://localhost:3000/Subscribers/{id}
+GET http://localhost:3000/Subscribers/62879508cd627358bf91316e
 
 ###
 
@@ -16,13 +21,47 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/Subscribers/{id}
+DELETE http://localhost:3000/Subscribers/62879508cd627358bf91316e
 
 ###
 
-PATCH http://localhost:3000/Subscribers/{id}
+PATCH http://localhost:3000/Subscribers/62879508cd627358bf91316e
 Content-Type: application/json
 
 {
     "name": "Joe Mana"
+}
+
+// Channels
+
+###
+
+GET http://localhost:3000/Channels
+
+###
+
+GET http://localhost:3000/Channels/{id}
+
+###
+
+POST http://localhost:3000/Channels
+Content-Type: application/json
+
+{
+    "name": "MrBeast",
+    "subscribers": 999999999
+}
+
+###
+
+DELETE http://localhost:3000/Channels/{id}
+
+###
+
+PATCH http://localhost:3000/Channels/{id}
+Content-Type: application/json
+
+{
+    "name": "PewDiePie",
+    "subscribers": 0
 }
