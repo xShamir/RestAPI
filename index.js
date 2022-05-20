@@ -13,7 +13,10 @@ db.once('open', () => console.log("Connection established with database."));
 
 app.use(express.json());
 
-const router = require("./routes/subscribers");
-app.use("/subscribers", router);
+const subscribersRouter = require("./routes/subscribers");
+const channelsRouter = require("./routes/channels");
+
+app.use("/subscribers", subscribersRouter);
+app.use("/channels", channelsRouter);
 
 app.listen(3000, () => console.log("Online!"));
