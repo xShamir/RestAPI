@@ -1,6 +1,6 @@
 # RestAPI
 
-This is my first Rest API made with [![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)](https://www.nodejs.org), [![Express](https://img.shields.io/badge/-Express-000?&logo=Express)](https://expressjs.com) & [![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=MongoDB)](https://www.mongodb.com). It's an API where you can interact with data, retrieve information, update information & etc. Going to be adding channels soon.
+This is my first Rest API made with [![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)](https://www.nodejs.org), [![Express](https://img.shields.io/badge/-Express-000?&logo=Express)](https://expressjs.com) & [![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=MongoDB)](https://www.mongodb.com). It's an API where you can interact with data from subscribers & channels, retrieve information, update information & etc.
 
 <img src="https://raw.githubusercontent.com/xShamir/RestAPI/master/RestAPI-Design.png"/>
 
