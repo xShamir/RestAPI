@@ -7,7 +7,7 @@ GET http://localhost:3000/Subscribers
 
 ###
 
-GET http://localhost:3000/Subscribers/62879508cd627358bf91316e
+GET http://localhost:3000/Subscribers/{id}
 
 ###
 
@@ -21,11 +21,11 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/Subscribers/62879508cd627358bf91316e
+DELETE http://localhost:3000/Subscribers/{id}
 
 ###
 
-PATCH http://localhost:3000/Subscribers/62879508cd627358bf91316e
+PATCH http://localhost:3000/Subscribers/{id}
 Content-Type: application/json
 
 {
@@ -48,8 +48,7 @@ POST http://localhost:3000/Channels
 Content-Type: application/json
 
 {
-    "name": "MrBeast",
-    "subscribers": 999999999
+    "name": "MrBeast"
 }
 
 ###
@@ -63,5 +62,4 @@ Content-Type: application/json
 
 {
     "name": "PewDiePie",
-    "subscribers": 0
 }
