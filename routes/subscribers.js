@@ -30,6 +30,8 @@ router.post("/", async (req, res) => {
     try {
         const record = await subscriber.save();
         res.status(201).json(subscriber);
+
+        
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
@@ -46,6 +48,7 @@ router.patch("/:id", get, async (req, res) => {
     if(req.body.subscribedTo != null)
     {
         res.subscriber.subscribedTo = req.body.subscribedTo;
+        res.subscriber.subscriptionDate = Date.now();
     }
 
     try {
