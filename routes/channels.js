@@ -24,7 +24,7 @@ router.get("/:id", get, (req, res) => {
 router.post("/", async (req, res) => {
     const channel = new Channel({
         name: req.body.name,
-        subscribers: req.body.subscribers
+        subscribers: 0
     });
 
     try {
